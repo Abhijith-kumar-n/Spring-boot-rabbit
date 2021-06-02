@@ -1,4 +1,6 @@
 package com.example.springbootrabbit.Publisher;
+import com.example.springbootrabbit.Consumer.EmployeeConsume;
+import com.example.springbootrabbit.Consumer.EmployeeConsume.*;
 import com.example.springbootrabbit.config.*;
 import com.example.springbootrabbit.Employee;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
