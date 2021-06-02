@@ -1,26 +1,28 @@
 package com.example.springbootrabbit;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
+@Setter
 @ToString
+
 public class Employee {
+
+    private int id;
+
     private String EmpName;
-    private String EmpId;
     private String EmpDept;
     private String EmpBGrp;
-
-    public String getEmpName() {
-        return EmpName;
-    }
-
-    public void setEmpName(String empName) {
+    /*
+    public Employee(String empId, String empName, String empDept, String empBGrp) {
+        EmpId = empId;
         EmpName = empName;
+        EmpDept = empDept;
+        EmpBGrp = empBGrp;
     }
 
     public String getEmpId() {
@@ -29,6 +31,14 @@ public class Employee {
 
     public void setEmpId(String empId) {
         EmpId = empId;
+    }
+
+    public String getEmpName() {
+        return EmpName;
+    }
+
+    public void setEmpName(String empName) {
+        EmpName = empName;
     }
 
     public String getEmpDept() {
@@ -50,10 +60,12 @@ public class Employee {
     @Override
     public String toString() {
         return "Employee{" +
-                "EmpName='" + EmpName + '\'' +
-                ", EmpId='" + EmpId + '\'' +
+                "EmpId='" + EmpId + '\'' +
+                ", EmpName='" + EmpName + '\'' +
                 ", EmpDept='" + EmpDept + '\'' +
                 ", EmpBGrp='" + EmpBGrp + '\'' +
                 '}';
     }
+
+     */
 }
