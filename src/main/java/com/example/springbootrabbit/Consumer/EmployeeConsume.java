@@ -1,4 +1,4 @@
-package com.example.springbootrabbit.Consumer;
+/*package com.example.springbootrabbit.Consumer;
 
 import com.example.springbootrabbit.config.*;
 import com.example.springbootrabbit.Employee;
@@ -15,3 +15,6 @@ public class EmployeeConsume {
     }
 
 }
+
+
+ */
